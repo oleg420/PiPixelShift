@@ -35,6 +35,7 @@ if __name__ == '__main__':
 
     pixel_shift_image = pixel_shift(images)
 
+    cv2.imwrite('pixel_shift_image.png', pixel_shift_image)
     cv2.imshow('Pixel shift image', pixel_shift_image)
     cv2.waitKey()
     cv2.destroyAllWindows()
